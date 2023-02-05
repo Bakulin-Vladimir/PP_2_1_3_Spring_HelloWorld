@@ -13,5 +13,6 @@ public class App {
         Cat cat2 = applicationContext.getBean("cat", Cat.class);
         System.out.println("Сравнение двух бинов HelloWorld: " + (helloWorld1 == helloWorld2));
         System.out.println("Сравнение двух бинов Cat: " + (cat1 == cat2));
+        ((AnnotationConfigApplicationContext) applicationContext).close();
     }
 }

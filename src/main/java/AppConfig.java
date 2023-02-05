@@ -16,6 +16,6 @@ public class AppConfig {
     @Bean(name = "cat")
     @Scope("prototype")
     public Cat getCat() {
-        return new Cat();
+        return new Cat("Vaska", (byte) 5);
     }
 }

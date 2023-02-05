@@ -1,13 +1,18 @@
 public class Cat {
-    private String nameCat;
+    private String name;
     private byte age;
 
-    public String getNameCat() {
-        return nameCat;
+    public Cat(String name, byte age) {
+        this.name = name;
+        this.age = age;
     }
 
-    public void setNameCat(String nameCat) {
-        this.nameCat = nameCat;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public byte getAge() {
